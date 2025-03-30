@@ -1,1 +1,80 @@
-egg
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyemer Client</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cyemer Client</h1>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#download">Download</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://discord.com" target="_blank" class="discord-button">Join Discord</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="hero">
+            <h2>Elevate Your Minecraft Experience</h2>
+            <img src="hero-image.jpg" alt="Cyemer showcase">
+            <button onclick="scrollToSection('download')">Get Cyemer</button>
+        </section>
+        <section id="features" class="features">
+            <h2>Features</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <img src="feature1.jpg" alt="Custom Mods">
+                    Custom Mods
+                </div>
+                <div class="feature">
+                    <img src="feature2.jpg" alt="FPS Boost">
+                    FPS Boost
+                </div>
+                <div class="feature">
+                    <img src="feature3.jpg" alt="Anti-Cheat Bypass">
+                    Anti-Cheat Bypass
+                </div>
+                <div class="feature">
+                    <img src="feature4.jpg" alt="Enhanced UI">
+                    Enhanced UI
+                </div>
+            </div>
+        </section>
+        <section id="download" class="download">
+            <h2>Download Cyemer</h2>
+            <button onclick="downloadClient()">Download Now</button>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        <footer>
+            <p>&copy; 2025 Cyemer Client. All Rights Reserved.</p>
+        </footer>
+    </div>
+    <style>
+        body {
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .discord-button {
+            background-color: #5865F2;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+    </style>
+</body>
+</html>
